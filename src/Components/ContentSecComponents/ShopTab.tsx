@@ -20,12 +20,11 @@ function ShopTab() {
         }));
 
         xhr.onload = ()=>{
-            console.log(UID)
             console.log(xhr.responseText)
             const parsedResponse = JSON.parse(xhr.responseText);
             setUserPoints(parsedResponse);
         }
-    })
+    },[])
 
     function buyPerk(perkName: string){
         let xhr = new XMLHttpRequest();
