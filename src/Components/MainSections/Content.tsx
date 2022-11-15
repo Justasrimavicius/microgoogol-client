@@ -49,10 +49,9 @@ function Content(props: props) {
         xhr.send(JSON.stringify({
             UID: UID
         }));
-
-        xhr.onload = ()=>{
-            console.log(xhr.responseText)
-        }
+        // xhr.onload = ()=>{
+        //     console.log(xhr.responseText)
+        // }
     },[])
 
     useEffect(()=>{
