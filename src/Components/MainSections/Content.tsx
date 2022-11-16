@@ -87,7 +87,7 @@ function Content(props: props) {
     },[sectionNum]);
     
     useEffect(()=>{
-        fetch('https://microgoogol.herokuapp.com/sectionsData')
+        fetch(`${link}/sectionsData`)
             .then(res=>{
             res.json()
                 .then(finalData=>{
