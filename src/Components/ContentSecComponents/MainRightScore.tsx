@@ -16,10 +16,9 @@ function MainRightScore(){
     useEffect(()=>{
         let xhr = new XMLHttpRequest();
         xhr.open("POST", `${link}/getUsersScore`, true);
-
         xhr.setRequestHeader('Content-Type', 'application/json');
-        xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
-
+        // xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+        console.log(UID);
         xhr.send(JSON.stringify({
             UID: UID
         }));
