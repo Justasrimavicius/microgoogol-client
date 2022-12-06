@@ -18,6 +18,8 @@ function MainRightScore(){
         xhr.open("POST", `${link}/getUsersScore`, true);
 
         xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+
         xhr.send(JSON.stringify({
             UID: UID
         }));
